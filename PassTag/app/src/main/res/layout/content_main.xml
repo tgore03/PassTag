@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.tanmaysue.passtag.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+
+            <EditText
+                android:id="@+id/EnterTagEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Enter Tag"
+                android:inputType="text"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/EnterEmailEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/EnterTagEditText"
+                android:layout_alignStart="@+id/EnterTagEditText"
+                android:layout_below="@+id/EnterTagEditText"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Enter Email or UserName"
+                android:inputType="text"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/EnterPasswordEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/EnterEmailEditText"
+                android:layout_alignStart="@+id/EnterEmailEditText"
+                android:layout_below="@+id/EnterEmailEditText"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/showPasswordCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/EnterPasswordEditText"
+                android:layout_toEndOf="@+id/EnterPasswordEditText"
+                android:textAlignment="center"
+                tools:text="Show" />
+
+            <EditText
+                android:id="@+id/EnterNoteEditText"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/EnterPasswordEditText"
+                android:layout_alignStart="@+id/EnterPasswordEditText"
+                android:layout_below="@+id/EnterPasswordEditText"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Enter Notes"
+                android:inputType="textMultiLine"
+                android:textAlignment="viewStart" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"></ScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:backgroundTint="?attr/colorControlHighlight"
+                app:elevation="0dp"
+                app:fabSize="normal"
+                app:srcCompat="@android:drawable/ic_input_add"
+                android:layout_marginLeft="23dp"
+                android:layout_marginStart="23dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/floatingActionButtonEdit"
+                android:layout_toEndOf="@+id/floatingActionButtonEdit" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButtonEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:backgroundTint="?attr/colorControlHighlight"
+                app:elevation="0dp"
+                app:fabSize="normal"
+                app:srcCompat="@android:drawable/ic_menu_edit"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginStart="120dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

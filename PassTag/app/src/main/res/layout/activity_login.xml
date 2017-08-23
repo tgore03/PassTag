@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tanmaysue.passtag.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/colorBackground">
+
+
+        <EditText
+            android:id="@+id/EmailEditText"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="71dp"
+            android:contentDescription="Email Address"
+            android:ems="10"
+            android:hint="Enter Email Address"
+            android:inputType="textEmailAddress"
+            android:textAlignment="textStart"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/PasswordEditText"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/EmailEditText"
+            android:layout_alignStart="@+id/EmailEditText"
+            android:layout_below="@+id/EmailEditText"
+            android:layout_marginTop="41dp"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/LoginButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/PasswordEditText"
+            android:layout_marginLeft="73dp"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="55dp"
+            android:contentDescription="Login Button"
+            android:elevation="18dp"
+            android:text="Login"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/RegisterButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/LoginButton"
+            android:layout_toEndOf="@+id/LoginButton"
+            android:layout_toRightOf="@+id/LoginButton"
+            android:elevation="18dp"
+            android:text="Register"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
